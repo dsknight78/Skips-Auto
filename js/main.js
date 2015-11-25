@@ -1,8 +1,6 @@
 /*
- * Responsee JS - v3 - 2015-08-22
- * http://www.myresponsee.com
- * Copyright 2015, Vision Design - graphic zoo
- * Free to use under the MIT license.
+ David Knight
+ responsive js
 */
 jQuery(document).ready(function($) {
   //Responsee tabs
