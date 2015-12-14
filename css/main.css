@@ -2,7 +2,7 @@
  David Knight 
  responsive css
 */
-* {  
+*, *:before, *:after {  
   -webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
@@ -24,11 +24,15 @@ h2 {font-size:2em;}
 h3 {font-size:1.6em;}  
 h4 {font-size:1.2em;}  
 h5 {font-size:1em;}  
-h6 {font-size:0.9em;}    
+h6 {font-size:0.9em;} 
+
 a, a:link, a:visited, a:hover, a:active {
 	text-decoration:none;
-  color:#444;
+  color: #a1b3b0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 	}
+
 img {
   border:0;
   display:block;
@@ -36,10 +40,42 @@ img {
 	max-width:100%;
   width:auto;
 	}
-.owl-item img, .full-img {
-  max-width: none;
-	width:100%;
-	} 
+
+#cta {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+      ),
+  url(../img/blackGrillCar.png);
+  background-size: cover;
+  height: 30vmax;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+
+.title h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-family: 'Alegreya', serif;
+  font-size: 3rem;
+  color: white;
+  /*white-space: nowrap;*/
+}
+.title h2 {
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: rem;
+  color: white;
+}
 
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
@@ -67,11 +103,63 @@ td {border-right:1px solid #e0e0e0;}
   padding:0 0.625em;
 }
 .size-960.align-content-left .line,.size-1140.align-content-left .line {margin-left:0;}
-form {line-height:1.4em;}
+form {
+  line-height:1.4em;
+}
+
+.form {
+  background: #444;
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+.tab-group li a:hover {
+  background: #262626;
+  color: #ffffff;
+}
+.tab-group .active a {
+  background: #262626;
+  color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
 nav {
   display:block;
   width:100%;
   background:#262626;
+  box-shadow: 2px 2px 2px #666666;
+  -webkit-box-shadow: 2px 2px 2px #666666;
+  -moz-box-shadow: 2px 2px 2px #666666;
 }
 .line:after,nav:after,.center:after,.box:after {
   clear:both;
@@ -85,16 +173,19 @@ nav {
 .top-nav ul ul {
   position:absolute;
   background:#262626;
+
 }
 .top-nav li {
   float:left;
   list-style:none outside none;
   cursor:pointer;
+
 }
 .top-nav li a {
   padding:1.25em;
   display:block;
-  color:#fff; 
+  color:#fff;
+
 }
 .top-nav li ul li a {
   background:none repeat scroll 0 0 #222;
@@ -230,6 +321,8 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   width:100%;
 }
 .margin-bottom {margin-bottom:1.25em;}
+.margin-bottom-small {margin-bottom:0.5em;}
+
 .s-1, .s-2,.s-five,.s-3, .s-4, .s-5, .s-6, .s-7, .s-8, .s-9, .s-10, .s-11, .s-12, .m-1, .m-2, .m-five, .m-3, .m-4, .m-5, .m-6, .m-7, .m-8, .m-9, .m-10, .m-11, .m-12, .l-1, .l-2, .l-five, .l-3, .l-4, .l-5, .l-6, .l-7, .l-8, .l-9, .l-10, .l-11, .l-12 {
   float:left;
   position:relative;

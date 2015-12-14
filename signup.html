@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign-Up/Login Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+      <![endif]-->
+  </head>
+  <body class="size-1140">
+    <!-- HEADER -->
+    <header id="header">
+      <div class="line">
+              <div class="box">
+                 <div class="s-6 l-3">
+                    <img src="img/skipsLogo.png">
+                 </div>
+              </div>
+           </div>
+            <!-- TOP NAV -->  
+           <div class="line">
+              <nav class="margin-bottom">
+                 <p class="nav-text">Menu</p>
+                 <div class="top-nav s-12 l-10">
+                    <ul>
+                       <li><a>Home</a></li>
+                       <li>
+                          <a>Product</a>
+                          <ul>
+                             <li><a>Product 1</a></li>
+                             <li><a>Product 2</a></li>
+                             <li>
+                                <a>Product 3</a>
+                                <ul>
+                                   <li><a>Product 3-1</a></li>
+                                   <li><a>Product 3-2</a></li>
+                                   <li><a>Product 3-3</a></li>
+                                </ul>
+                             </li>
+                          </ul>
+                       </li>
+                       <li>
+                          <a>Company</a>
+                          <ul>
+                             <li><a>About</a></li>
+                             <li><a>Location</a></li>
+                          </ul>
+                       </li>
+                       <li><a>Contact</a></li>
+                        <li><a>Sign Up</a></li>
+                    </ul>
+                 </div>
+                 <div class="hide-s hide-m l-2">
+                    <i class="icon-facebook_circle icon2x right padding"></i>
+                 </div>
+              </nav>
+           </div> <!-- /TOP NAV --> 
+    </header><!-- /header -->
+
+    <div class="form">
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Sign Up for Free</h1>
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block"/>Get Started</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <button class="button button-block"/>Log In</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
